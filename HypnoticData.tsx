@@ -5,7 +5,12 @@ import {
   Info,
   UserRoundPen,
 } from "lucide-react";
-import { LinkType, QATYPE, SectionTwoType } from "./HypnoticTypes";
+import {
+  AdvisoryBoardProps,
+  LinkType,
+  QATYPE,
+  SectionTwoType,
+} from "./HypnoticTypes";
 import { TfiWorld } from "react-icons/tfi";
 
 const IconSize = 8;
@@ -95,5 +100,15 @@ export const QADATA: QATYPE = [
   {
     question: "nigga ",
     answer: "nothing to say",
+  },
+];
+
+export const AdvisoryBoard: AdvisoryBoardProps = [
+  {
+    name: "",
+    smallDescription: "",
+    picture: "",
+    role: "",
+    profile: "",
   },
 ];
