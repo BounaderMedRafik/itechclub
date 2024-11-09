@@ -1,9 +1,9 @@
-import {ArrowRight} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import React from "react";
 import MyLogo from "../brand/MyLogo";
 import Link from "next/link";
-import {Button, buttonVariants} from "../ui/button";
-import {Links} from "@/HypnoticData";
+import { Button, buttonVariants } from "../ui/button";
+import { Links } from "@/HypnoticData";
 
 const Navigation = () => {
   return (
@@ -19,17 +19,18 @@ const Navigation = () => {
           <div className="flex items-center gap-0.5">
             {Links.map((item, i) => (
               <div key={i}>
-                <a
+                <Link
                   href={item.href}
                   className={buttonVariants({
                     variant: "ghost",
                     size: "sm",
-                  })}>
+                  })}
+                >
                   <div className="flex items-center gap-2">
                     <div>{item.icon}</div>
                     <div>{item.title}</div>
                   </div>
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -41,7 +42,8 @@ const Navigation = () => {
                   size: "default",
                   className:
                     "group relative  overflow-hidden border border-foreground",
-                })}>
+                })}
+              >
                 <div className="inline-flex  translate-y-0 items-center justify-center px-6  transition duration-300 group-hover:-translate-y-[150%]">
                   Join Us
                 </div>

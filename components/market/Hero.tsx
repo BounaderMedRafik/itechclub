@@ -1,11 +1,14 @@
 import React from "react";
-import {Button} from "../ui/button";
-import {ArrowRight, ArrowUpRight, Sparkles, Sticker} from "lucide-react";
+import { Button } from "../ui/button";
+import { ArrowRight, ArrowUpRight, Sparkles, Sticker } from "lucide-react";
 
 const Hero = () => {
   return (
     <>
-      <div className=" max-w-screen-lg flex-col mx-auto pt-24 flex items-center justify-center ">
+      <div
+        id="Home"
+        className=" max-w-screen-lg flex-col mx-auto pt-24 flex items-center  justify-center  "
+      >
         <div className=" text-5xl relative font-Manrope  text-center font-semibold ">
           The East Stars I-Tech,
           <br /> Number #1 club in{" "}

@@ -24,3 +24,27 @@ export type AdvisoryBoardProps = {
   role: string;
   profile: string;
 }[];
+
+export type TeamProps = {
+  name: string;
+  position: string;
+  picture: string;
+  description: string;
+  socialLinks: {
+    name: string;
+    url: string;
+    icon: string | ReactNode;
+  }[];
+}[];
+
+export type MembershipCardprops = {
+  title: string;
+  description: string;
+  icon: ReactNode;
+}[];
+
+export type WorkShopsProps = {
+  title: string;
+  image: string;
+  description: string | ReactNode;
+}[];
