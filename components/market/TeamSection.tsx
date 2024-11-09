@@ -20,7 +20,7 @@ export const TeamSection = () => {
           className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
         >
           {Team.map((person) => (
-            <li key={person.name}>
+            <div key={person.name}>
               <div className="flex items-center gap-x-6 font-Manrope">
                 <img
                   alt=""
@@ -28,21 +28,28 @@ export const TeamSection = () => {
                   className=" size-24 rounded-full border border-foreground/25 object-cover"
                 />
                 <div>
-                  <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
-                    {person.name}
-                  </h3>
+                  <h3 className="text-base/7 font-semibold">{person.name}</h3>
                   <p className=" text-xs opacity-75 w-[30ch]">
                     {person.description}
                   </p>
                   <div className=" flex items-center gap-3 mt-4">
                     <User size={14} />
-                    <p className="text-sm/6 font-semibold  text-primary">
+                    <div className="text-sm font-semibold  text-primary">
                       {person.position}
-                    </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 mt-4">
+                    {person.socialLinks.map((subItem, i) => (
+                      <div key={i}>
+                        <a href={subItem.url} target="_blank">
+                          {subItem.icon}
+                        </a>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
-            </li>
+            </div>
           ))}
         </ul>
       </div>

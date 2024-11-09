@@ -34,14 +34,14 @@ const Hero = () => {
         </div>
 
         <div className="flex items-center gap-0.5 mt-7">
-          <Button size={"lg"}>
+          {/* <Button size={"lg"}>
             <div className=" flex items-center gap-2">
               <div>Join Us</div>
               <div>
                 <ArrowRight size={15} />
               </div>
             </div>
-          </Button>
+          </Button> */}
           <Button size={"lg"} variant={"harshOutline"}>
             <div className=" flex items-center gap-2">
               <div>Know More</div>
