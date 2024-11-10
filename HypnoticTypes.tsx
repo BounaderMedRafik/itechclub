@@ -23,6 +23,7 @@ export type AdvisoryBoardProps = {
   picture: string;
   role: string;
   profile: string;
+  email: string;
 }[];
 
 export type TeamProps = {

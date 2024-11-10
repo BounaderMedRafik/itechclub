@@ -1,5 +1,6 @@
 import { ArrowUpRight, Sparkles, Sticker } from "lucide-react";
-import { Button } from "../ui/button";
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
 
 const Hero = () => {
   return (
@@ -41,14 +42,20 @@ const Hero = () => {
               </div>
             </div>
           </Button> */}
-          <Button size={"lg"} variant={"harshOutline"}>
+          <Link
+            href={"/aboutus"}
+            className={buttonVariants({
+              size: "lg",
+              variant: "default",
+            })}
+          >
             <div className=" flex items-center gap-2">
               <div>Know More</div>
               <div>
                 <ArrowUpRight size={15} />
               </div>
             </div>
-          </Button>
+          </Link>
         </div>
         <div className=" mt-12 border border-transparent transition-all duration-300 ease-in-out hover:border-foreground/25 rounded-3xl overflow-hidden group ">
           <img

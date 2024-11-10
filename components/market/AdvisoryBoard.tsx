@@ -25,46 +25,48 @@ const AdvisoryBoardComp = () => {
           className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
         >
           {AdvisoryBoard.map((person) => (
-            <li key={person.name}>
-              <div className="flex items-center gap-x-6 font-Manrope">
+            <div key={person.name}>
+              <div className="flex items-start gap-x-6 font-Manrope">
                 <img
                   alt=""
                   src={person.picture}
                   className="h-16 w-16 rounded-full border border-foreground/25"
                 />
                 <div>
-                  <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
+                  <div className="text-base/7 font-semibold tracking-tight text-gray-900">
                     {person.name}
-                  </h3>
-                  <p className=" text-xs opacity-75 w-[30ch]">
+                  </div>
+                  <div className=" text-xs opacity-75 w-[30ch] mt-4">
                     {person.smallDescription}
-                  </p>
+                  </div>
                   <div className=" flex items-center gap-3 mt-4">
                     <UniversityIcon size={14} />
-                    <p className="text-sm/6 font-semibold  text-primary">
+                    <div className="text-sm/6 font-semibold  text-primary">
                       {person.role}
-                    </p>
+                    </div>
+                  </div>
+                  <div className=" text-xs opacity-75 mt-3">{person.email}</div>
+                  <div className=" mt-3">
+                    <a
+                      target="_blank"
+                      href={person.profile}
+                      className={buttonVariants({
+                        variant: "link",
+                        size: "sm",
+                        className: " px-0 py-0",
+                      })}
+                    >
+                      <div className="flex items-center gap-2">
+                        <div>View Profile</div>
+                        <div>
+                          <ArrowUpRight size={15} />
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className=" mt-8">
-                <a
-                  target="_blank"
-                  href={person.profile}
-                  className={buttonVariants({
-                    variant: "default",
-                    size: "sm",
-                  })}
-                >
-                  <div className="flex items-center gap-2">
-                    <div>View Profile</div>
-                    <div>
-                      <ArrowUpRight size={15} />
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </li>
+            </div>
           ))}
         </ul>
       </div>

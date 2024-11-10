@@ -36,9 +36,9 @@ export const quote = {
     </>
   ),
   picture:
-    "https://hxcqxvdpfctfywkxocdr.supabase.co/storage/v1/object/public/MyPics/264458597_448489896895215_5781428340992632480_n.jpg",
-  whoSaid: "Bounader Med Rafik",
-  Role: "Lame ass nigga",
+    "https://media.licdn.com/dms/image/v2/D4E03AQFGrA0uDNh2UA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713216618621?e=1736985600&v=beta&t=b6vOVOSC477UUtNctvd9EOWpMy0qLuHv6nDAf1lN_tk",
+  whoSaid: "Lokman Touil",
+  Role: "President of I-Tech UCBET",
 };
 
 export const Links: LinkType = [
@@ -104,12 +104,24 @@ export const QADATA: QATYPE = [
 
 export const AdvisoryBoard: AdvisoryBoardProps = [
   {
-    name: "chmam dzb",
-    smallDescription: "zbizbizbzibizbizbi",
+    name: "Mr. CHEMMAM Chaouki",
+    smallDescription:
+      "Head of department of UCBET & responsible for graduations",
     picture:
-      "https://i.pinimg.com/564x/07/aa/b7/07aab7a301658969736784042fca7543.jpg",
-    role: "nyak lclub",
-    profile: "/",
+      "https://www.shutterstock.com/image-vector/default-avatar-photo-placeholder-grey-600nw-2007531536.jpg",
+    role: "Head of department",
+    profile: "https://scholar.google.com/citations?user=7mFaP1MAAAAJ&hl=fr",
+    email: "chemam-chaouki@univ-eltarf.dz",
+  },
+  {
+    name: "Dr. BENMECHICHE Madjid",
+    smallDescription:
+      "The deputy head of department responsible for schooling and graduation teachers",
+    picture:
+      "https://media.licdn.com/dms/image/v2/C4E03AQE7e6LdW18xFw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619072463583?e=1736985600&v=beta&t=Auy4KUDS_9siXGFaE3URUFbVdYh5BPsAUrBYInr4Nm4",
+    role: "The deputy head of department",
+    profile: "https://orcid.org/0000-0002-0690-2625",
+    email: "benmachiche-abdelmadjid@univ-eltarf.dz",
   },
 ];
 
@@ -291,51 +303,163 @@ export const WorkShops: WorkShopsProps = [
   },
   {
     image:
-      "https://w3-lab.com/wp-content/uploads/2019/12/Get-the-Most-Fancied-Web-Development-Services-min-scaled.jpg",
+      "https://cdn.prod.website-files.com/5b651f8b5fc94c4e27470a81/622227fd2ce3cc0455a88166_blog-gamedev-fullsize-p-2000.png",
     description: (
       <>
         <p>
-          <strong>Learn to build websites from scratch!</strong>
+          <strong>Learn to build games from scratch!</strong>
         </p>
         <p>
           <strong>In this workshop, you&#39;ll:</strong>
         </p>
         <ul>
-          <li>Master HTML, CSS, and JavaScript</li>
-          <li>Create dynamic and interactive web pages</li>
-          <li>Build real-world projects</li>
-          <li>Get expert guidance and support</li>
+          <li>
+            Master game development fundamentals with Unity or Unreal Engine
+          </li>
+          <li>Create 2D and 3D games</li>
+          <li>Implement interactive gameplay mechanics</li>
+          <li>Get expert guidance and feedback on your projects</li>
         </ul>
         <p>
-          <strong>Join us to start your web development journey!</strong>
+          <strong>Join us to start your game development journey!</strong>
         </p>
       </>
     ),
-    title: "Web Development Workshop",
+    title: "Game Development",
   },
   {
     image:
-      "https://w3-lab.com/wp-content/uploads/2019/12/Get-the-Most-Fancied-Web-Development-Services-min-scaled.jpg",
+      "https://cdn.prod.website-files.com/65a790f0493b6806e60d6e21/660e8ac66813866c71248853_Choosing-a-Mobile-App-Framework.jpeg",
     description: (
       <>
         <p>
-          <strong>Learn to build websites from scratch!</strong>
+          <strong>Learn to build apps from scratch!</strong>
         </p>
         <p>
           <strong>In this workshop, you&#39;ll:</strong>
         </p>
         <ul>
-          <li>Master HTML, CSS, and JavaScript</li>
-          <li>Create dynamic and interactive web pages</li>
-          <li>Build real-world projects</li>
-          <li>Get expert guidance and support</li>
+          <li>
+            Master mobile app development with tools like React Native or
+            Flutter
+          </li>
+          <li>Build apps for both iOS and Android</li>
+          <li>Integrate APIs and databases for dynamic functionality</li>
+          <li>
+            Get expert guidance and support throughout the development process
+          </li>
         </ul>
         <p>
-          <strong>Join us to start your web development journey!</strong>
+          <strong>Join us to start your app development journey!</strong>
         </p>
       </>
     ),
-    title: "Web Development Workshop",
+    title: "App Development",
+  },
+  {
+    image:
+      "https://img.freepik.com/free-vector/hand-drawn-flat-design-npl-illustration_23-2149262968.jpg?t=st=1731256216~exp=1731259816~hmac=171b67bc53913863cff4ca090607b7e120ac603a1f1364793d22a81ea523b6ec&w=740",
+    description: (
+      <>
+        <p>
+          <strong>Learn to build intelligent systems from scratch!</strong>
+        </p>
+        <p>
+          <strong>In this workshop, you&#39;ll:</strong>
+        </p>
+        <ul>
+          <li>Master machine learning and deep learning techniques</li>
+          <li>
+            Build AI models for natural language processing, computer vision,
+            and more
+          </li>
+          <li>
+            Work with popular libraries like TensorFlow, PyTorch, and
+            scikit-learn
+          </li>
+          <li>
+            Get expert guidance on model training, evaluation, and deployment
+          </li>
+        </ul>
+        <p>
+          <strong>Join us to start your AI development journey!</strong>
+        </p>
+      </>
+    ),
+    title: "AI Development",
+  },
+  {
+    image:
+      "https://www.pgsuae.com/wp-content/webp-express/webp-images/uploads/2023/08/balancing-cybersecurity-and-web-design-the-right-way.jpg.webp",
+    description: (
+      <>
+        <p>
+          <strong>Learn to protect systems and data from cyber threats!</strong>
+        </p>
+        <p>
+          <strong>In this workshop, you&#39;ll:</strong>
+        </p>
+        <ul>
+          <li>
+            Understand the fundamentals of cybersecurity and ethical hacking
+          </li>
+          <li>
+            Learn about network security, encryption, and penetration testing
+          </li>
+          <li>
+            Explore tools and techniques for identifying vulnerabilities and
+            mitigating risks
+          </li>
+          <li>
+            Get expert guidance on securing web applications, servers, and
+            networks
+          </li>
+        </ul>
+        <p>
+          <strong>Join us to start your cybersecurity journey!</strong>
+        </p>
+      </>
+    ),
+    title: "Cybersecurity",
+  },
+  {
+    image: "https://frameboxxborivali.in/upload/page/video-editing_957513x.jpg",
+    description: (
+      <>
+        <p>
+          <strong>
+            Learn to create stunning designs and edit videos like a pro!
+          </strong>
+        </p>
+        <p>
+          <strong>In this workshop, you&#39;ll:</strong>
+        </p>
+        <ul>
+          <li>
+            Master graphic design principles using tools like Adobe Photoshop
+            and Illustrator
+          </li>
+          <li>
+            Learn video editing techniques with software like Adobe Premiere Pro
+            or Final Cut Pro
+          </li>
+          <li>
+            Create professional-quality logos, animations, and social media
+            content
+          </li>
+          <li>
+            Get expert tips on color theory, typography, and video storytelling
+          </li>
+        </ul>
+        <p>
+          <strong>
+            Join us to unleash your creativity and become a design and video
+            editing expert!
+          </strong>
+        </p>
+      </>
+    ),
+    title: "Design & Video Editing",
   },
 ];
 
@@ -431,21 +555,6 @@ export const AboutUsInfos = () => {
       <p>
         Ready to take your tech journey to the next level? Join I-Tech Club
         today!
-      </p>
-      <p>
-        <strong>
-          [Insert a captivating image of your club members working on a project
-          or attending an event]
-        </strong>
-      </p>
-      <p>
-        <strong>
-          [Insert a call to action, such as &quot;Join Us&quot; or &quot;Contact
-          Us&quot;]
-        </strong>
-      </p>
-      <p>
-        <strong>[Include links to your social media pages or website]</strong>
       </p>
     </>
   );
