@@ -1,6 +1,5 @@
-import React from "react";
+import { ArrowUpRight, Sparkles, Sticker } from "lucide-react";
 import { Button } from "../ui/button";
-import { ArrowRight, ArrowUpRight, Sparkles, Sticker } from "lucide-react";
 
 const Hero = () => {
   return (

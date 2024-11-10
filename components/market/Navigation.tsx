@@ -1,12 +1,9 @@
 "use client";
-import { ArrowRight } from "lucide-react";
-import React from "react";
-import MyLogo from "../brand/MyLogo";
-import Link from "next/link";
-import { Button, buttonVariants } from "../ui/button";
 import { Links } from "@/HypnoticData";
-import { useRouter } from "next/router"; // Import useRouter
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import MyLogo from "../brand/MyLogo";
+import { buttonVariants } from "../ui/button";
 
 const Navigation = () => {
   // Get the router object
@@ -78,19 +75,19 @@ const Navigation = () => {
   );
 };
 
-const Banner = () => {
-  return (
-    <>
-      <div className="font-Manrope py-2.5 bg-primary flex justify-center items-center">
-        <div className="flex items-center text-xs opacity-75 text-background gap-3">
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
-          <div>
-            <ArrowRight size={13} />
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+// const Banner = () => {
+//   return (
+//     <>
+//       <div className="font-Manrope py-2.5 bg-primary flex justify-center items-center">
+//         <div className="flex items-center text-xs opacity-75 text-background gap-3">
+//           <div>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+//           <div>
+//             <ArrowRight size={13} />
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
 export default Navigation;

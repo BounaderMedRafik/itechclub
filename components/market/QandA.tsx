@@ -1,7 +1,7 @@
 "use client";
 import { QADATA } from "@/HypnoticData";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, LayoutGroup, motion, useScroll } from "framer-motion";
+import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { Plus } from "lucide-react";
 import { ReactNode, useRef, useState } from "react";
 

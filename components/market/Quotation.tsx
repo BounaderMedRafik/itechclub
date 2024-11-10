@@ -1,6 +1,5 @@
-import {quote} from "@/HypnoticData";
-import {Quote, QuoteIcon} from "lucide-react";
-import React from "react";
+import { quote } from "@/HypnoticData";
+import { QuoteIcon } from "lucide-react";
 
 const Quotation = () => {
   return (
