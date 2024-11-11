@@ -104,16 +104,6 @@ export const QADATA: QATYPE = [
 
 export const AdvisoryBoard: AdvisoryBoardProps = [
   {
-    name: "Mr. CHEMMAM Chaouki",
-    smallDescription:
-      "Head of department of UCBET & responsible for graduations",
-    picture:
-      "https://www.shutterstock.com/image-vector/default-avatar-photo-placeholder-grey-600nw-2007531536.jpg",
-    role: "Head of department",
-    profile: "https://scholar.google.com/citations?user=7mFaP1MAAAAJ&hl=fr",
-    email: "chemam-chaouki@univ-eltarf.dz",
-  },
-  {
     name: "Dr. BENMECHICHE Madjid",
     smallDescription:
       "The deputy head of department responsible for schooling and graduation teachers",
