@@ -1,6 +1,6 @@
-import type {Config} from "tailwindcss";
+import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        Manrope: "Manrope",
+        offbit: "OffBit Trial",
+        manrope: "Manrope",
       },
       colors: {
         background: "hsl(var(--background))",
@@ -62,5 +63,4 @@ const config: Config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-};
-export default config;
+} satisfies Config;

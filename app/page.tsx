@@ -1,28 +1,13 @@
-import AdvisoryBoardComp from "@/components/market/AdvisoryBoard";
-import Hero from "@/components/market/Hero";
-import QuestionAnswerSec from "@/components/market/QandA";
-import Quotation from "@/components/market/Quotation";
-import { TeamSection } from "@/components/market/TeamSection";
+import AboutUs from "@/components/core/AboutUs";
+import Hero from "@/components/core/Hero";
+import NavigationBar from "@/components/core/NavigationBar";
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <Hero />
-      </div>
-      <div>
-        <Quotation />
-      </div>
-      <div>
-        <QuestionAnswerSec />
-      </div>
-      <div>
-        <TeamSection />
-      </div>
-      <div>
-        <AdvisoryBoardComp />
-      </div>
-      <div className=" h-[10vh]"></div>
+      <Hero />
+      <AboutUs />
+      <div className=" h-svh" />
     </div>
   );
 }
