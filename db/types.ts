@@ -52,6 +52,7 @@ export type UpcomingEvent = {
   date: string;
   location?: string;
   image: string;
+  showcaseImages?: string[];
   participants?: {
     pfp: string;
     name: string;

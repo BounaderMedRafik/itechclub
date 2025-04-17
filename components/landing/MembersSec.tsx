@@ -20,7 +20,10 @@ const MembersSec = () => {
     500: 2, // 1 column on mobile
   };
   return (
-    <div id="team" className=" wrapper overflow-x-clip pt-24 border-x ">
+    <div
+      id="team"
+      className=" wrapper overflow-x-clip md:overflow-x-visible pt-24 border-x "
+    >
       <div className=" p-5">
         <div className=" text-4xl ">Our Team</div>
         <div className=" text-sm max-w-sm opacity-75">
@@ -48,11 +51,13 @@ const MembersSec = () => {
         {members.map((item, i) => (
           <div key={i} className=" border group">
             <div className=" relative">
-              <img
-                className=" absolute z-20 h-full w-full object-cover opacity-0 transition-all group-hover:opacity-100 duration-300 ease-in-out"
-                src={item.images}
-                alt=""
-              />
+              {item.images && (
+                <img
+                  className=" absolute z-20 h-full w-full object-cover opacity-0 transition-all group-hover:opacity-100 duration-300 ease-in-out"
+                  src={item.images}
+                  alt=""
+                />
+              )}
               <img
                 src={item.pfp}
                 alt={item.fullname}

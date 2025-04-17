@@ -57,26 +57,21 @@ export const navItems: NavItemProps[] = [
         link: "/#advisory-board",
         icon: <GraduationCap size={iconSize} />,
       },
-      // {
-      //   title: "Projects",
-      //   link: "/projects",
-      //   icon: <Folder size={iconSize} />,
-      // },
-      // {
-      //   title: "Blog",
-      //   link: "/blog",
-      //   icon: <BookOpen size={iconSize} />,
-      // },
-      // {
-      //   title: "Gallery",
-      //   link: "/gallery",
-      //   icon: <Image size={iconSize} />,
-      // },
-      // {
-      //   title: "Contact",
-      //   link: "/contact",
-      //   icon: <Mail size={iconSize} />,
-      // },
+      {
+        title: "Instagram",
+        icon: <BsInstagram size={14} />,
+        link: "https://www.instagram.com/itech_ucbet/",
+      },
+      {
+        title: "Facebook",
+        icon: <BsFacebook size={14} />,
+        link: "https://www.facebook.com/i.tech.el.tarf.2025",
+      },
+      {
+        title: "Discord",
+        icon: <BsDiscord size={14} />,
+        link: "https://discord.gg/XTCfstyx77",
+      },
     ],
   },
   {
@@ -90,11 +85,11 @@ export const navItems: NavItemProps[] = [
         link: "/#upcoming-event",
         icon: <Clock size={iconSize} />,
       },
-      // {
-      //   title: "Past Events",
-      //   link: "/events/past",
-      //   icon: <History size={iconSize} />,
-      // },
+      {
+        title: "Past Events",
+        link: "/events/",
+        icon: <History size={iconSize} />,
+      },
     ],
   },
 
@@ -186,6 +181,22 @@ export const members: MemberProps[] = [
       twitter: undefined,
     },
   },
+
+  {
+    fullname: "Karamane Abderrahmane",
+    description:
+      "Abderrahmane brings creative vision and technical prowess to the team as a Game Developer and Vice President. Passionate about interactive storytelling and immersive design, he leads with innovation and a drive to push boundaries in game development.",
+    role: "Game Developper & Vice President",
+    pfp: "/kids/abdo.png",
+    images: "/men/abdo.jpg",
+    socials: {
+      insta: "https://www.instagram.com/abderahmenzizo/",
+      linkedin: "https://www.linkedin.com/in/abderrahman-karamane-863b122b7/",
+      facebook: "https://www.facebook.com/abderahmen.zizo.2025",
+      website: undefined,
+      twitter: undefined,
+    },
+  },
   {
     fullname: "Hussein Islem",
     description:
@@ -213,6 +224,21 @@ export const members: MemberProps[] = [
       facebook: "https://www.facebook.com/mohamd.rafik.945349/",
       website: "https://bmed.vercel.app/",
       twitter: "https://x.com/bwnadrrr",
+    },
+  },
+  {
+    fullname: "Bouzana Chirine",
+    description:
+      "Chirine refines content and communication with her strong English background, making her key to writing and documentation.",
+    role: "Content Strategist & Language Specialist",
+    pfp: "/kids/chirine.png",
+    images: "",
+    socials: {
+      insta: undefined,
+      linkedin: undefined,
+      facebook: "https://www.facebook.com/gen.kei",
+      website: undefined,
+      twitter: undefined,
     },
   },
   {
@@ -307,6 +333,41 @@ export const superVisors: MemberProps[] = [
 
 export const events: UpcomingEvent[] = [
   {
+    title: "Welcome Day!",
+    join: "",
+    location: "Chadli Bendjedid University",
+    upcoming: false,
+    description: (
+      <div>
+        <p>
+          📢 ITECH Club&apos;s Open Days have ended... but the excitement is
+          just beginning! 🚀
+        </p>
+        <p>
+          ✨ The days were full of energy and enthusiasm — we introduced you to
+          our projects and goals, and shared our passion for technology and
+          science. 🌐💡
+        </p>
+        <p>
+          Thank you to everyone who visited, joined the activities, asked
+          questions, or even just stopped by to say hi. 🙌
+        </p>
+        <p>
+          The journey doesn&apos;t end here... stay tuned for more upcoming
+          events and workshops that&apos;ll be even bigger and better! 🔥
+        </p>
+      </div>
+    ),
+    date: "15 October 2024",
+    image: "/eventsPics/welcomeday2024/1.jpg",
+    showcaseImages: [
+      "/eventsPics/welcomeday2024/2.jpg",
+      "/eventsPics/welcomeday2024/3.jpg",
+      "/eventsPics/welcomeday2024/4.jpg",
+    ],
+  },
+
+  {
     title: "I-Tech workshops 2025!",
     date: "15-16 April 2025",
     location: "Chadli Bendjedid University | Ai House",
@@ -351,7 +412,19 @@ export const events: UpcomingEvent[] = [
       },
     ],
     join: "https://docs.google.com/forms/d/e/1FAIpQLSen1Td9iWQevvRwAsmPMoCrdKgnkKD3KHKYKZKuKACt1rBICg/viewform",
-    upcoming: true,
+    upcoming: false,
+    showcaseImages: [
+      "/eventsPics/15-16-april-warsha/1.jpeg",
+      "/eventsPics/15-16-april-warsha/2.jpeg",
+      "/eventsPics/15-16-april-warsha/3.jpeg",
+      "/eventsPics/15-16-april-warsha/4.jpeg",
+      "/eventsPics/15-16-april-warsha/5.jpeg",
+      "/eventsPics/15-16-april-warsha/6.jpeg",
+      "/eventsPics/15-16-april-warsha/7.jpeg",
+      "/eventsPics/15-16-april-warsha/8.jpeg",
+      "/eventsPics/15-16-april-warsha/9.jpeg",
+      "/eventsPics/15-16-april-warsha/10.jpeg",
+    ],
   },
 ];
 
@@ -372,3 +445,5 @@ export const socials: SocialProps[] = [
     link: "https://discord.gg/XTCfstyx77",
   },
 ];
+
+export const BannerContent = "";

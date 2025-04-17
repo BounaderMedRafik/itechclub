@@ -1,6 +1,6 @@
 "use client";
 import { buttonVariants } from "@/components/ui/button";
-import { navItems, socials } from "@/db/data";
+import { BannerContent, navItems, socials } from "@/db/data";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronRight, Menu, Moon, Sun } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -331,8 +331,12 @@ const Navigation = () => {
 
 const Banner = () => {
   return (
-    <div className="wrapper bg-primary py-1 flex items-center justify-center text-background text-sm border">
-      Get ready for our upcoming workshops in 16 april!
+    <div>
+      {BannerContent && (
+        <div className="wrapper bg-primary py-1 flex items-center justify-center text-background text-sm border">
+          {BannerContent}
+        </div>
+      )}
     </div>
   );
 };
@@ -343,7 +347,7 @@ export const ModeToggle = () => {
     <div>
       <div
         onClick={() => setTheme("light")}
-        className=" p-3  bg-accent items-center justify-center hidden dark:flex md:border cursor-pointer  transition-all duration-300"
+        className=" p-3  bg-accent md:bg-background items-center justify-center hidden dark:flex md:border cursor-pointer  transition-all duration-300"
       >
         <div>
           <Sun size={14} />
@@ -351,7 +355,7 @@ export const ModeToggle = () => {
       </div>
       <div
         onClick={() => setTheme("dark")}
-        className=" p-3  items-center bg-accent justify-center flex dark:hidden md:border cursor-pointer  transition-all duration-300"
+        className=" p-3  items-center bg-accent md:bg-background justify-center flex dark:hidden md:border cursor-pointer  transition-all duration-300"
       >
         <div>
           <Moon size={14} />
