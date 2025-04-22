@@ -202,9 +202,9 @@ const Navigation = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-end wrapper">
+          {/* <div className="flex items-center justify-end wrapper">
             <ModeToggle />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -232,9 +232,9 @@ const Navigation = () => {
             ))}
           </div>
 
-          <div>
+          {/* <div>
             <ModeToggle />
-          </div>
+          </div> */}
           <div
             onClick={() => {
               setShow(!show);

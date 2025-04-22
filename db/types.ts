@@ -46,7 +46,7 @@ export type MemberProps = {
 
 export type UpcomingEvent = {
   title: string;
-  join: string;
+  join?: string;
   upcoming: boolean;
   description?: React.ReactNode;
   date: string;
@@ -64,4 +64,10 @@ export type SocialProps = {
   title: string;
   icon: React.ReactNode;
   link: string;
+};
+
+export type GalleryProp = {
+  location: string;
+  date: string;
+  images: string[];
 };

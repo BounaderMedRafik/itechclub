@@ -43,11 +43,11 @@ export const EventTemplate = (upcomingEvent: UpcomingEvent) => {
       <div className=" aspect-square col-span-1 p-1 border-dashed border-2">
         <img src={upcomingEvent.image} alt="" />
       </div>
-      <div className="p-2 px-3 mt-8">
+      <div className="p-2 px-3 mt-8 md:mt-0">
         <div className=" text-sm opacity-75">{upcomingEvent.date}</div>
         <div className=" text-xl flex items-center justify-between">
           <div>{upcomingEvent.title}</div>
-          {upcomingEvent.upcoming && (
+          {upcomingEvent.upcoming && upcomingEvent.join && (
             <div>
               <a
                 href={upcomingEvent.join}

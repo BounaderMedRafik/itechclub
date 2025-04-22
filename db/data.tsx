@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import {
   FeaturesProps,
+  GalleryProp,
   MemberProps,
   NavItemProps,
   Quote,
@@ -426,6 +427,77 @@ export const events: UpcomingEvent[] = [
       "/eventsPics/15-16-april-warsha/10.jpeg",
     ],
   },
+
+  {
+    title: "AI & Cultural Heritage Forum – House of Culture",
+    join: "",
+    location: "Home of culture - El Taref",
+    upcoming: true,
+    date: "22 - 24 april 2025",
+    image: "/eventsPics/darthaqafa23-04-2025/9.jpeg",
+    participants: [
+      {
+        pfp: "/kids/lokman.png",
+        name: "Lokman Touil",
+        role: "Game Developper",
+      },
+      {
+        pfp: "/kids/aymen_pfp.png",
+        name: "Aymen Melouah",
+        role: "Game Developper",
+      },
+      {
+        pfp: "/kids/abdo.png",
+        name: "Karamane Abderrahmane",
+        role: "Game Developper",
+      },
+      {
+        pfp: "/kids/ramzi.png",
+        name: "Bouhadjar Ramzi",
+        role: "App Developper",
+      },
+      {
+        pfp: "/kids/siradj_pfp.png",
+        name: "Lamri Monir Siradj",
+        role: "Designer",
+      },
+      {
+        pfp: "/kids/kouciela.png",
+        name: "Haroui Koussaila",
+        role: "Ai Developer",
+      },
+    ],
+    showcaseImages: [
+      "/eventsPics/darthaqafa23-04-2025/1.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/2.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/3.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/4.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/5.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/6.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/7.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/8.jpeg",
+    ],
+    description: (
+      <div>
+        <p>
+          🎙️ Join a gathering of passionate minds exploring how Artificial
+          Intelligence can help preserve and protect cultural heritage.
+        </p>
+        <p>
+          🏛️ The event takes place at the House of Culture, where tradition and
+          technology come together.
+        </p>
+        <p>
+          🤖💡 Discover exciting talks, interactive demos, and cutting-edge
+          innovations at the crossroads of AI and heritage.
+        </p>
+        <p>
+          🌍📚 Whether you&apos;re a student, researcher, or just curious,
+          you&apos;re welcome to be part of this inspiring forum.
+        </p>
+      </div>
+    ),
+  },
 ];
 
 export const socials: SocialProps[] = [
@@ -447,3 +519,11 @@ export const socials: SocialProps[] = [
 ];
 
 export const BannerContent = "";
+
+export const Gallery: GalleryProp[] = [
+  {
+    location: "",
+    date: "",
+    images: [],
+  },
+];

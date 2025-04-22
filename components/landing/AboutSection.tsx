@@ -107,18 +107,6 @@ const AboutSection = () => {
         <Link href={"/gallery"}>
           <div
             className={buttonVariants({
-              variant: "secondary",
-            })}
-          >
-            <div>Blog</div>
-            <div>
-              <ArrowUpRight size={13} />
-            </div>
-          </div>
-        </Link>
-        <Link href={"/gallery"}>
-          <div
-            className={buttonVariants({
               variant: "default",
             })}
           >
