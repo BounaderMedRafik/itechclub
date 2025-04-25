@@ -1,6 +1,7 @@
 import Navigation from "@/components/core/layout/Navigation";
 import type { Metadata } from "next";
 import "./globals.css";
+import LenisProvider from "@/components/providers/LenisProvider";
 
 export const metadata: Metadata = {
   title: "I-Tech Scientific Club | El Taref",
@@ -62,15 +63,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={` font-sf`}>
-        {/* <ThemeProvider
+        <LenisProvider>
+          {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         > */}
-        <Navigation />
-        <div className=" pt-24">{children}</div>
-        {/* </ThemeProvider> */}
+          <Navigation />
+          <div className=" pt-24">{children}</div>
+          {/* </ThemeProvider> */}
+        </LenisProvider>
       </body>
     </html>
   );

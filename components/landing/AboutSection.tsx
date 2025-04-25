@@ -1,9 +1,11 @@
+"use client";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { buttonVariants } from "../ui/button";
 import { features } from "@/db/data";
 import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
 
 const AboutSection = () => {
   return (
@@ -49,8 +51,44 @@ const AboutSection = () => {
       </div>
 
       <div className=" p-5 md:grid grid-cols-2">
-        <div className=" text-4xl w-full ">Who are we ?</div>
-        <div className=" relative z-40 mt-3 md:mt-0 ">
+        <motion.div
+          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            filter: "blur(10px)",
+            y: 60,
+          }}
+          whileInView={{
+            opacity: 1,
+            filter: "blur(0px)",
+            y: 0,
+            transition: {
+              ease: [0.25, 1, 0.5, 1],
+              duration: 2,
+            },
+          }}
+          className=" text-4xl w-full "
+        >
+          Who are we ?
+        </motion.div>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            filter: "blur(10px)",
+          }}
+          whileInView={{
+            opacity: 1,
+            filter: "blur(0px)",
+
+            transition: {
+              ease: [0.25, 1, 0.5, 1],
+              duration: 1,
+              delay: 0.5,
+            },
+          }}
+          className=" relative z-40 mt-3 md:mt-0 "
+        >
           We are <span className=" bg-accent">I-Tech</span> Scientific Club, a
           powerhouse of tech innovation nestled in El Taref! We&apos;re not just
           a club; we&apos;re a collective of passionate minds diving deep into
@@ -58,12 +96,48 @@ const AboutSection = () => {
           we&apos;re constantly pushing boundaries and exploring the digital
           frontier. We&apos;re cool, we&apos;re creative, and we&apos;re
           building the future, one line of code at a time.
-        </div>
+        </motion.div>
       </div>
 
       <div className=" p-5 md:grid grid-cols-2">
-        <div className=" text-4xl ">What do we do ?</div>
-        <div className=" relative z-40 mt-3 md:mt-0 ">
+        <motion.div
+          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            filter: "blur(10px)",
+            y: 60,
+          }}
+          whileInView={{
+            opacity: 1,
+            filter: "blur(0px)",
+            y: 0,
+            transition: {
+              ease: [0.25, 1, 0.5, 1],
+              duration: 2,
+            },
+          }}
+          className=" text-4xl "
+        >
+          What do we do ?
+        </motion.div>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{
+            opacity: 0,
+            filter: "blur(10px)",
+          }}
+          whileInView={{
+            opacity: 1,
+            filter: "blur(0px)",
+
+            transition: {
+              ease: [0.25, 1, 0.5, 1],
+              duration: 1,
+              delay: 0.5,
+            },
+          }}
+          className=" relative z-40 mt-3 md:mt-0 "
+        >
           At iTech Scientific Club, we&apos;re driven by a passion to explore
           and create within the vast landscape of Information Technology.
           We&apos;re not just passive observers; we&apos;re active participants,
@@ -80,7 +154,7 @@ const AboutSection = () => {
           projects that make a tangible difference. In essence, iTech Scientific
           Club is a hub of innovation, where we learn, collaborate, and build
           the future, one project at a time.
-        </div>
+        </motion.div>
       </div>
 
       <div className=" md:grid grid-cols-3">

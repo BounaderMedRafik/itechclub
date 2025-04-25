@@ -433,7 +433,7 @@ export const events: UpcomingEvent[] = [
     join: "",
     location: "Home of culture - El Taref",
     upcoming: true,
-    date: "22 - 24 april 2025",
+    date: "22 - 24, 27 april 2025",
     image: "/eventsPics/darthaqafa23-04-2025/9.jpeg",
     participants: [
       {
@@ -465,6 +465,16 @@ export const events: UpcomingEvent[] = [
         pfp: "/kids/kouciela.png",
         name: "Haroui Koussaila",
         role: "Ai Developer",
+      },
+      {
+        pfp: "/kids/rafik.png",
+        name: "Bounader Med Rafik",
+        role: "Web Developer",
+      },
+      {
+        pfp: "/kids/guessiba.jpeg",
+        name: "Hussein Islem",
+        role: "Web Developer",
       },
     ],
     showcaseImages: [
@@ -518,7 +528,8 @@ export const socials: SocialProps[] = [
   },
 ];
 
-export const BannerContent = "";
+export const BannerContent =
+  "Find us in the House of culture in El Taref Library";
 
 export const Gallery: GalleryProp[] = [
   {

@@ -16,7 +16,23 @@ const Navigation = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className=" hidden md:block w-full fixed top-0 left-0 z-50">
+      <motion.div
+        initial={{
+          marginTop: -100,
+
+          filter: "blur(10px)",
+        }}
+        animate={{
+          marginTop: 0,
+
+          filter: "blur(0px)",
+          transition: {
+            ease: [0.25, 1, 0.5, 1],
+            duration: 1.3,
+          },
+        }}
+        className=" hidden md:block w-full fixed top-0 left-0 z-50"
+      >
         <div className="md:pt-4">
           <div>
             <Banner />
@@ -206,7 +222,7 @@ const Navigation = () => {
             <ModeToggle />
           </div> */}
         </div>
-      </div>
+      </motion.div>
 
       {/* phone navigation */}
       <div className="block md:hidden w-full fixed top-0 left-0  z-50 p-2">
@@ -331,13 +347,15 @@ const Navigation = () => {
 
 const Banner = () => {
   return (
-    <div>
-      {BannerContent && (
-        <div className="wrapper bg-primary py-1 flex items-center justify-center text-background text-sm border">
-          {BannerContent}
-        </div>
-      )}
-    </div>
+    <a href="#upcoming-event">
+      <div>
+        {BannerContent && (
+          <div className="wrapper bg-primary py-1 flex items-center justify-center text-background text-sm border">
+            {BannerContent}
+          </div>
+        )}
+      </div>
+    </a>
   );
 };
 
