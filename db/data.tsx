@@ -432,7 +432,7 @@ export const events: UpcomingEvent[] = [
     title: "AI & Cultural Heritage Forum – House of Culture",
     join: "",
     location: "Home of culture - El Taref",
-    upcoming: true,
+    upcoming: false,
     date: "22 - 24, 27 april 2025",
     image: "/eventsPics/darthaqafa23-04-2025/9.jpeg",
     participants: [
@@ -486,6 +486,9 @@ export const events: UpcomingEvent[] = [
       "/eventsPics/darthaqafa23-04-2025/6.jpeg",
       "/eventsPics/darthaqafa23-04-2025/7.jpeg",
       "/eventsPics/darthaqafa23-04-2025/8.jpeg",
+      "/eventsPics/darthaqafa23-04-2025/10.jpg",
+      "/eventsPics/darthaqafa23-04-2025/11.jpg",
+      "/eventsPics/darthaqafa23-04-2025/12.jpg",
     ],
     description: (
       <div>
