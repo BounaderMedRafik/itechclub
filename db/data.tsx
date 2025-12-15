@@ -117,14 +117,13 @@ export const navItems: NavItemProps[] = [
 export const quote: Quote = {
   quote: (
     <div>
-      Every great dream begins with a dreamer. Always remember, you have within
-      you the strength, the patience, and the passion to reach for the stars to
-      change the world.
+      We are not born to kneel on our own land. Empires pass, armies fade, but a
+      people who defend their dignity remain.
     </div>
   ),
   person: {
-    name: "Lokman Touil",
-    pfp: "/kids/lokman.png",
+    name: "Haraoui Kouceila",
+    pfp: "/kids/kouciela.png",
     role: "President of I-Tech UCBET",
   },
 };
@@ -155,23 +154,10 @@ export const features: FeaturesProps[] = [
 
 export const members: MemberProps[] = [
   {
-    fullname: "Lokman Touil",
-    description:
-      "Visionary Game Developer and dedicated leader with a passion for interactive storytelling. As President, Lokman brings creativity and direction to the team, constantly pushing the boundaries of what's possible in game development.",
-    role: "Game Developper & President",
-    pfp: "/kids/lokman.png",
-    images: "/men/lokman.jpg",
-    socials: {
-      insta: "https://www.instagram.com/loki_touil/",
-      linkedin: "https://www.linkedin.com/in/lokman-touil-50ab90261/",
-      facebook: "https://www.facebook.com/lokman.touil.127",
-    },
-  },
-  {
-    fullname: "Haroui Koussaila",
+    fullname: "Haraoui Kouceila",
     description:
       "Innovative AI Developer and strategic Project Manager, combining technical prowess with organizational insight. Koussaila is passionate about creating intelligent systems and driving projects from ideation to execution.",
-    role: "Ai Developer & Project Manager",
+    role: "President",
     pfp: "/kids/kouciela.png",
     images: "/men/kouc.png",
     socials: {
@@ -227,36 +213,21 @@ export const members: MemberProps[] = [
       twitter: "https://x.com/bwnadrrr",
     },
   },
-  {
-    fullname: "Bouzana Chirine",
-    description:
-      "Chirine refines content and communication with her strong English background, making her key to writing and documentation.",
-    role: "Content Strategist & Language Specialist",
-    pfp: "/kids/chirine.png",
-    images: "",
-    socials: {
-      insta: undefined,
-      linkedin: undefined,
-      facebook: "https://www.facebook.com/gen.kei",
-      website: undefined,
-      twitter: undefined,
-    },
-  },
-  {
-    fullname: "Lamri Monir Siradj",
-    description:
-      "Passionate Community Manager and storyteller with a deep love for photography and AI. Monir blends communication, creativity, and tech to engage and grow vibrant communities, both online and off.",
-    role: "Community Manager",
-    pfp: "/kids/siradj_pfp.png",
-    images: "/men/sarouj.jpg",
-    socials: {
-      insta: "https://www.instagram.com/sirgio03/",
-      linkedin: "https://www.linkedin.com/in/siradj-lamri/",
-      facebook: "https://www.facebook.com/gogo.lamri.7",
-      website: undefined,
-      twitter: undefined,
-    },
-  },
+  // {
+  //   fullname: "Lamri Monir Siradj",
+  //   description:
+  //     "Passionate Community Manager and storyteller with a deep love for photography and AI. Monir blends communication, creativity, and tech to engage and grow vibrant communities, both online and off.",
+  //   role: "Community Manager",
+  //   pfp: "/kids/siradj_pfp.png",
+  //   images: "/men/sarouj.jpg",
+  //   socials: {
+  //     insta: "https://www.instagram.com/sirgio03/",
+  //     linkedin: "https://www.linkedin.com/in/siradj-lamri/",
+  //     facebook: "https://www.facebook.com/gogo.lamri.7",
+  //     website: undefined,
+  //     twitter: undefined,
+  //   },
+  // },
   {
     fullname: "Aymen Melouah",
     description:
@@ -305,19 +276,19 @@ export const members: MemberProps[] = [
 ];
 
 export const superVisors: MemberProps[] = [
-  {
-    fullname: "Abdelmadjid Benmachiche ",
-    description:
-      "The deputy head of department responsible for schooling and graduation teachers",
-    role: "The deputy head of department",
-    pfp: "/supervisors/madjidcute.jpeg",
-    images: "/supervisors/madjid.jpg",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/abdelmadjid-benmachiche-80100062/",
-      facebook: "https://www.facebook.com/magid.ben.10",
-      website: "https://www.researchgate.net/profile/Abdelmadjid-Benmachiche",
-    },
-  },
+  // {
+  //   fullname: "Abdelmadjid Benmachiche ",
+  //   description:
+  //     "The deputy head of department responsible for schooling and graduation teachers",
+  //   role: "The deputy head of department",
+  //   pfp: "/supervisors/madjidcute.jpeg",
+  //   images: "/supervisors/madjid.jpg",
+  //   socials: {
+  //     linkedin: "https://www.linkedin.com/in/abdelmadjid-benmachiche-80100062/",
+  //     facebook: "https://www.facebook.com/magid.ben.10",
+  //     website: "https://www.researchgate.net/profile/Abdelmadjid-Benmachiche",
+  //   },
+  // },
   {
     fullname: "Newfel Messaoudi",
     description:
@@ -511,6 +482,48 @@ export const events: UpcomingEvent[] = [
       </div>
     ),
   },
+  {
+    title: "Welcome Day! - We are not robots.",
+    description: (
+      <div>
+        <p>
+          A day full of energy and experiences! Join us and be part of the
+          club’s vibrant atmosphere ✨
+        </p>
+
+        <p>Your chance to:</p>
+
+        <ul>
+          <li>🟧 Meet the team</li>
+          <li>🟧 Discover upcoming programs</li>
+          <li>🟧 Ask your questions across various fields</li>
+          <li>🟧 Enjoy exceptional experiences</li>
+        </ul>
+
+        <p>🗓️ Tuesday, November 25, 2025</p>
+        <p>
+          📍 Faculty of Science and Technology – Ground Floor, Chadli Bendjedid
+          University, El Tarf
+        </p>
+      </div>
+    ),
+    upcoming: false,
+    date: "25 November 2025",
+    image: "/eventsPics/welcomeday2025/1.jpg",
+    showcaseImages: [
+      "/eventsPics/welcomeday2025/1.jpg",
+      "/eventsPics/welcomeday2025/2.jpg",
+      "/eventsPics/welcomeday2025/3.jpg",
+      "/eventsPics/welcomeday2025/4.jpg",
+      "/eventsPics/welcomeday2025/5.jpg",
+      "/eventsPics/welcomeday2025/6.jpg",
+      "/eventsPics/welcomeday2025/7.jpg",
+      "/eventsPics/welcomeday2025/8.jpg",
+      "/eventsPics/welcomeday2025/9.jpg",
+    ],
+
+    location: "Faculty of Science and Technology - UCBET ",
+  },
 ];
 
 export const socials: SocialProps[] = [
@@ -531,8 +544,7 @@ export const socials: SocialProps[] = [
   },
 ];
 
-export const BannerContent =
-  "Find us in the House of culture in El Taref Library";
+export const BannerContent = "Club Number #1 in Chadli ben djedid - El Tarf";
 
 export const Gallery: GalleryProp[] = [
   {

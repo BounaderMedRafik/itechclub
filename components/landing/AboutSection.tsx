@@ -178,7 +178,7 @@ const AboutSection = () => {
       </div>
 
       <div className=" flex items-center justify-end">
-        <Link href={"/gallery"}>
+        <Link href={"/events"}>
           <div
             className={buttonVariants({
               variant: "default",

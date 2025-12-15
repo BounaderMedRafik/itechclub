@@ -19,7 +19,6 @@ const Navigation = () => {
       <motion.div
         initial={{
           marginTop: -100,
-
           filter: "blur(10px)",
         }}
         animate={{

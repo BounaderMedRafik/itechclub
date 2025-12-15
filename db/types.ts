@@ -48,11 +48,11 @@ export type UpcomingEvent = {
   title: string;
   join?: string;
   upcoming: boolean;
-  description?: React.ReactNode;
+  description: React.ReactNode;
   date: string;
-  location?: string;
+  location: string;
   image: string;
-  showcaseImages?: string[];
+  showcaseImages: string[];
   participants?: {
     pfp: string;
     name: string;
